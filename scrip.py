@@ -6,7 +6,12 @@ from nltk.corpus import stopwords
 from nltk import pos_tag, DependencyGraph
 import gensim.downloader as api
 
-nltk.download()
+nltk.download('punkt_tab')
+nltk.download("punkt")
+nltk.download("wordnet")
+nltk.download("stopwords")
+nltk.download("averaged_perceptron_tagger")
+nltk.download('averaged_perceptron_tagger_eng')
 
 # Load word embeddings (GloVe 50D)
 embeddings = api.load("glove-wiki-gigaword-50")
