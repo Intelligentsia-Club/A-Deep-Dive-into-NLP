@@ -5,17 +5,8 @@ from nltk.stem import PorterStemmer, WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk import pos_tag, DependencyGraph
 import gensim.downloader as api
-import os
 
-# nltk_data_path = os.path.expanduser("~") + "/nltk_data"  # Store in home directory
-# os.makedirs(nltk_data_path, exist_ok=True)
-# nltk.data.path.append(nltk_data_path)
-nltk.download('punkt_tab')
-nltk.download("punkt")
-nltk.download("wordnet")
-nltk.download("stopwords")
-nltk.download("averaged_perceptron_tagger")
-nltk.download('averaged_perceptron_tagger_eng')
+# nltk.download()
 
 # Load word embeddings (GloVe 50D)
 embeddings = api.load("glove-wiki-gigaword-50")
