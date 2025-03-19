@@ -6,7 +6,7 @@ from nltk.corpus import stopwords
 from nltk import pos_tag, DependencyGraph
 import gensim.downloader as api
 
-# nltk.download()
+nltk.download()
 
 # Load word embeddings (GloVe 50D)
 embeddings = api.load("glove-wiki-gigaword-50")
